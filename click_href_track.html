@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</head>
+
+<body>
+<!--a href -->
+<div class="a-href">
+<a target="_blank" href="/abc">abc</a>
+<a target="_blank" href="/abc">abc</a>
+<a target="_blank" href="/abc">abc</a>
+<script type="text/javascript">
+$('a').eq(1).attr('href',function(i, attr) {
+  return attr + '?click_from=qixn';
+});
+</script>
+<!--a href 很多时候我们需要，给某一个连接，或某几个连接加上跟踪,eq(1) 表示 a 的第一而个，因为默认从0开始-->
+</div>
+</body>
+</html>
